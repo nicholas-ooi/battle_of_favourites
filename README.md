@@ -2,7 +2,7 @@
 
 A simple whacky game that highlights the number of favourites chosen by random people on the internet!
 
-This was built in the most state of art technologies: SvelteKit, Tailwind, Node, Digital Ocean MongoDB
+This was built with the most state of art technologies at experimental stage: SvelteKit, Tailwind, Node, Digital Ocean MongoDB
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
 
