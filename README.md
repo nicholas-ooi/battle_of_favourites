@@ -234,7 +234,7 @@ export async function getDB() : Promise
 
 Go to app.postcss  
 add the import statement  
-```
+``` postcss
 @import url("https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap");
 @tailwind base;
 @tailwind components;
@@ -243,7 +243,7 @@ add the import statement
 
 Go to tailwind.config.cjs  
 [extend the theme with the extra configuration](https://tailwindcss.com/docs/theme)  
-```
+``` cjs
 const config = {
 	mode: "jit",
 	purge: [
