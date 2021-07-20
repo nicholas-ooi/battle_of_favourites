@@ -1,42 +1,61 @@
 # Battle of Favourites
 
-A simple whacky game that highlights the number of favourites chosen by random people on the internet!
+A whacky game that highlights the number of favourites chosen by random people on the internet!
 
-This was built with the most state of art technologies at experimental stage: SvelteKit, Tailwind, Node, Digital Ocean MongoDB
+This app does not focus on any real-life use cases but rather it was created out of technology experimentation and fun.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+This was built with state of the art technologies at experimental stages, with little documentation on the net: SvelteKit, Tailwind, Node, Digital Ocean MongoDB  
 
-## Creating a project
+Since this app was use for DigitalOcean Hackathon 2021 submission. A CRUD operation is required, hence a semi-account creation feature was added to fulfill those operations.  
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Installation
+
+Install Node 16.5.0  
+Install NPM 7.6.0  
+Use [Digital Ocean Managed MongoDB](https://www.digitalocean.com/blog/introducing-digitalocean-managed-mongodb/)
 
 ```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
+# install all npm packages
+# These will install tailwind, typescript, svelte, and others
+npm i
 ```
 
-> Note: the `@next` is temporary
+## MongoDB setup
 
-## Developing
+Digital Ocean Managed MongoDB simplifies this step.  
+[Once you deploy Digital Ocean Managed MongoDB](https://www.youtube.com/watch?v=NvHQSV7jnKA&ab_channel=DigitalOcean)  
+Download the ca-certificate.crt file and place at the root folder of the app  
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Configuration of Env
+
+Rename .env-example to .env
+
+VITE word is required since sveltekit needs it to read env variables.  
+
+VITE_DB_URL refers to the database connection string given from Digital Ocean Managed MongoDB  
+[Do include username and password in the string if required.](https://docs.mongodb.com/manual/reference/connection-string/)  
+
+VITE_DB_NAME refers to the database name  
+VITE_ACCOUNTS_COLLECTION refers to the account collection **name**  
+VITE_FAVOURITES_COLLECTION refers to the favourites collection **name**  
+
+``` env
+VITE_DB_URL=
+VITE_DB_NAME=
+VITE_ACCOUNTS_COLLECTION=
+VITE_FAVOURITES_COLLECTION=
+```
+
+
+## Test and run
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
 ## Building
-
 Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
 
 ```bash
 npm run build
 ```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
