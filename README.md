@@ -2,7 +2,7 @@
 
 A whacky game that highlights the number of favourites chosen by random people on the internet!  
 
-This app does not focus on any real-life use cases but rather it was created out of technology experimentation, fun, and the open-source learning community.  
+This app does not focus on any real-life use cases but rather it was created out of technological experimentation, fun, and for the open-source learning community.  
 
 This was built with state of the art technologies at experimental stages, with little documentation on the net: SvelteKit, Tailwind, Node, Digital Ocean MongoDB  
 
@@ -229,6 +229,6 @@ export async function getDB() : Promise
 }
 ```
 
-All in all, these explaination should be able to sum up how data is interacted and its relationship are forged across the various files.  
+All in all, these explaination should be able to sum up how data is interacted and its relationship are forged across the various files via svelte.  
 On a personal note, have to say its a beautiful piece of art of how sveltekit attempts to simplify full-stack development yet keeping it flexible.  
 They might violate some software principles, but forward-thinking is all about breaking these principles and re-defining a new and better one.
