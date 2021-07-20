@@ -4,7 +4,12 @@ A whacky game that highlights the number of favourites chosen by random people o
 
 This app does not focus on any real-life use cases but rather it was created out of technological experimentation, fun, and for the open-source learning community.  
 
-This was built with state of the art technologies at experimental stages, with little documentation on the net: SvelteKit, Tailwind, Node, Digital Ocean MongoDB  
+This was built with state of the art technologies at experimental stages, with little documentation on the net
+* SvelteKit Beta - The fullstack framework
+* Svelte - The compiling reactivity frontend framework 
+* Tailwind - The utility-first CSS framework
+* NodeJs - The server
+* Digital Ocean Managed Database MongoDB  - The online database
 
 Since this app was use for DigitalOcean Hackathon 2021 submission. A CRUD operation is required, hence a semi-like account creation feature was added to fulfill those operations.  
 
