@@ -157,6 +157,7 @@ For DELETE on svelte, it would be **del** since delete is a reserved keyword in 
 ## /src/routes/api/favourites.ts
 
 In the get operation, we could do a logical switch of operations in different ways of fetching data  
+To pass a query parameter into calling an API via sveltekit. `request.query` would obtain from the string `/api/favourites?operation=1`  
 Since we could fetch data in various ways such as by random, a single data, multiple data, filtered data etc..  
 In this case, we will just zoom into `result = await getFavourite()`  
 `getFavourite()` would be called from another backend script.  
@@ -229,6 +230,20 @@ export async function getDB() : Promise
 }
 ```
 
+## Loading custom fonts into tailwind sveltekit
+
+Go to app.postcss  
+```
+@import url("https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+##
+
+
+
 All in all, these explaination should be able to sum up how data is interacted and its relationship are forged across the various files via svelte.  
-On a personal note, have to say its a beautiful piece of art of how sveltekit attempts to simplify full-stack development yet keeping it flexible.  
+On a personal note, have to say it iss a beautiful piece of art of how sveltekit attempts to simplify full-stack development yet keeping it flexible.  
 They might violate some software principles, but forward-thinking is all about breaking these principles and re-defining a new and better one.
