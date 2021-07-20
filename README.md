@@ -233,11 +233,37 @@ export async function getDB() : Promise
 ## Loading custom fonts into tailwind sveltekit
 
 Go to app.postcss  
+add the import statement  
 ```
 @import url("https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+```
+
+Go to tailwind.config.cjs  
+[extend the theme with the extra configuration](https://tailwindcss.com/docs/theme)  
+```
+const config = {
+	mode: "jit",
+	purge: [
+		"./src/**/*.{html,js,svelte,ts}",
+	],
+	theme: {
+		extend: {
+			colors:{
+			'new-black':'#101820',
+			'new-orange':'#F2AA4C'
+			},
+			fontFamily: {
+			ruslan: ['Ruslan Display']
+			}
+		}
+	},
+	plugins: [],
+};
+
+module.exports = config;
 ```
 
 ##
