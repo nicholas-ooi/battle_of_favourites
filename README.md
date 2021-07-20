@@ -271,5 +271,5 @@ module.exports = config;
 
 
 All in all, these explaination should be able to sum up how data is interacted and its relationship are forged across the various files via svelte.  
-On a personal note, have to say it iss a beautiful piece of art of how sveltekit attempts to simplify full-stack development yet keeping it flexible.  
-They might violate some software principles, but forward-thinking is all about breaking these principles and re-defining a new and better one.
+On a personal note, have to say it is a beautiful piece of art of how sveltekit attempts to simplify full-stack development yet keeping it flexible.  
+They might violate some software principles, but forward-thinking is all making a breakthrough and re-defining a new and better principle.
